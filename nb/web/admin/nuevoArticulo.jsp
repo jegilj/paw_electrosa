@@ -99,7 +99,7 @@
               </div>
               <div class="field">
                 <label for="pvp">P.V.P:
-                  <c:if test="${empty articulo || articulo.pvp <= 0}">
+                  <c:if test="${empty articulo.pvp || articulo.pvp <= 0}">
                         <span class='Requerido'>Requerido</span>
                     </c:if>
                 </label>
