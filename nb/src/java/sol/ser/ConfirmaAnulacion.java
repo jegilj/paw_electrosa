@@ -42,7 +42,6 @@ public class ConfirmaAnulacion extends HttpServlet {
                 for(Pedido p: gbdp.getPedidos(cliente.getCodigo())){
                     if(p.getCodigo().equals(pedido.getCodigo())){
                         corresponde= true;
-                        break;
                     }
                     if(corresponde){
                         if(!pedido.isCursado()){
